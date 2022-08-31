@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+     <div id="text">
+        <h4>freeCodeCamp Survey Form</h4>
+        <p>Thank you for taking the time to help us improve the platform</p>
+     </div>
+<br><br>
+    <div id="conteiner">
+        <div id="area-form">
+            <form id="form">
+                Nome <br>
+                <input type="name"  id="nome" placeholder="Digite seu nome" required maxlength="50"
+                minlength="3"> 
+<br><br>
+                Email <br>
+                <input type="email"  id="email" placeholder="Digite seu email" required minlength="10" maxlenght="50">
+
+<br><br> 
+                Idade <br>
+                <input type="number" id="idade" placeholder="Digite sua idade" required min="10" max="150">
+<br><br>
+                Qual opção melhor descreve seu papel atual?
+
+                <div id="select-01">
+                    <select name="select-01" id="select-01">
+                        <option disabled selected value>Selecione a opção</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="professor">Professor</option>
+                        <option value="estagio">Estagiário</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+<br><br>
+                Você recomendaria esse site para um amigo? <br>
+
+                <label>
+                    <input type="radio" name="r-01" id="r-01" value="sim" check> Sim <br>
+                </label>
+
+                <label>
+                    <input type="radio" name="r-02" id="r-02" value="nao" check> Não <br>
+                </label> 
+<br><br>
+                Qual é o seu recurso favorito desse site? <br>
+                <select name="select-02" id="select-02"> 
+                    <option disabled selected value>Selecione a opção</option>
+                    <option value="">Projetos</option>
+                    <option value="">Comunidade</option>
+                    <option value="">Fóruns</option>
+                </select>
+<br><br>
+                O que você gostaria de ver melhorado? (Verifique tudo o que se aplica) <br><br>
+                <label>
+                    <input type="checkbox" value="front-end"> Front-end Projetos <br>
+                    <input type="checkbox" value="back-end"> Back-end Projetos<br>
+                    <input type="checkbox" value="desafios"> Desafios<br>
+                    <input type="checkbox" value="forum"> Fóruns<br>
+                    <input type="checkbox" value="comunidade"> Comunidade<br>
+                    <input type="checkbox" value="videos"> Videos<br>
+                </label>
+
+<br><br>
+                Comente aqui algumas sugestões: <br><br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comente aqui" maxwidth="330px"></textarea> <br><br>
+
+                <div id="submit">
+                    <a href="#">Enviar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
